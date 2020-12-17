@@ -1,3 +1,11 @@
 p, h1{
 	text-align: center;
 }
+
+body{
+	background: #EBE8E7;
+}
+
+em strong{
+	color: #F56332;
+}
