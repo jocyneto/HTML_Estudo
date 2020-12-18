@@ -1,0 +1,19 @@
+body{
+	background: #EBE8E7;
+}
+
+#banner{
+	width: 100%;
+}
+
+h1, p{
+	text-align: center;
+}
+
+#missao{
+	font-size: 22px;
+}
+
+em strong{
+	color: #F56332;
+}
