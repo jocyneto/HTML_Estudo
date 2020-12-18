@@ -17,3 +17,7 @@ h1, p{
 em strong{
 	color: #F56332;
 }
+
+.itens{
+	font-style: italic;
+}
