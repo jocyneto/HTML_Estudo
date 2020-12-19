@@ -1,5 +1,6 @@
-body{
-	
+
+.titulo-principal{	
+	padding-left: 20px;	
 }
 
 #banner{
@@ -8,9 +9,16 @@ body{
 
 .principal{
 	background: #EBE8E7;
+	padding: 20px;
 }
 
-h1, p{
+
+
+.titulo-centralizado{
+	text-align: center;
+}
+
+p{
 	text-align: center;
 }
 
@@ -24,12 +32,21 @@ em strong{
 
 .beneficios{
 	background: #FFFFFF;
+	padding: 20px;
 }
 
-h2{
-	text-align: center;
+ul{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	padding-right: 15%;
+	
 }
 
 .itens{
 	font-style: italic;
+}
+
+.beneficiosimg{
+	width: 50%;
 }
