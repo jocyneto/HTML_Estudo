@@ -23,3 +23,38 @@ nav li{
 	text-transform: uppercase;
 	margin-left: 16px;
 }
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	
+	padding: 50px 0;
+}
+
+
+
+.produtos li{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	text-align: center;
+	box-sizing: border-box;
+	margin-left: 1.5%;
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+}
+
+.descricao-produto{
+	font-size: 18px;
+}
+
+.preco-produto{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+}
