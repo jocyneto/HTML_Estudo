@@ -16,13 +16,23 @@ nav{
 }
 
 nav li{
-	text-decoration: none;
 	font-weight: bold;
 	font-size: 24px;
 	display: inline;
-	text-transform: uppercase;
 	margin-left: 16px;
 }
+
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+nav a:hover{
+	text-decoration: underline;
+	color: #CCAD3E;
+}
+
 /* ----------------------------------------> CSS MAIN*/
 main{
 
@@ -45,11 +55,24 @@ main{
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 10px;
+}
 
+.produtos li:hover{
+	border-bottom: 6px solid #000000;
+	border-right: 6px solid #000000;
+	border-color: #CCAD3E;
+}
+
+.produtos li:hover h2{
+	font-size: 35px;
+}
+
+.produtos li:active{
+	border: 2px solid #CCAD3E;
 }
 
 .produtos h2{
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 	margin-left: 1.5%;
