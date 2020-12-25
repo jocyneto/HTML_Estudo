@@ -41,8 +41,8 @@ main{
 .produtos {
 	position: relative;
 	width: 940px;
-	margin: 0 auto;
-	margin-top: 100px;
+	margin: 0 auto;	
+	padding: 50px 20px;
 }
 
 .produtos li{
@@ -87,3 +87,18 @@ main{
 	font-weight: bold;
 	margin-top: 20px;
 }
+
+footer{
+	background: url("../img/bg.jpg");
+	text-align: center;
+	padding: 40px 20px;	
+}
+
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 22px;
+	margin: 30px 0 ;
+}
+
+
