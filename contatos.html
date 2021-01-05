@@ -23,30 +23,41 @@
 		<main>
 			<form method="get">
 				<label for="nomesobrenome">Seu nome: </label>
-				<input type="text" id="nomesobrenome" name="nomesobrenome">
+				<input type="text" id="nomesobrenome" name="nomesobrenome" class="input-principal">
 
 				<label for="email">E-mail: </label>
-				<input type="text" id="email" name="email">
+				<input type="email" id="email" name="email" class="input-principal">
 
 				<label for="telefone">Telefone: </label>
-				<input type="text" id="telefone" name="telefone">
+				<input type="tel" id="telefone" name="telefone" class="input-principal">
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem"></textarea>
+				<textarea cols="70" rows="10" id="mensagem" class="input-principal"></textarea>
 				
 				<div><!--Todos possuem a tag name com o mesmo nome, pois é uma marcação única, caso quiser mais de uma marcação, apenas retirar a tag 'name' ou colocar nomes diferentes -->
-					<p>Forma para entrar em contato</p>
-					<label for="radio-email">Email</label>
-					<input type="radio" name="contato" id="radio-email">
+					<p>Forma para entrar em contato:</p>
+					<label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
+					
 
-					<label for="radio-telefone">Telefone</label>
-					<input type="radio" name="contato" id="radio-telefone">
+					<label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
+					
 
-					<label for="radio-whatsapp">Whatsapp</label>
-					<input type="radio" name="contato" id="radio-whatsapp">
+					<label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">Whatsapp</label>
+					
 				</div>
 
-				<label for="check-receber"><input type="checkbox" name="receberEmail" id="check-receber">Gostaria de receber e-mails?</label>
+				<div class="selecao">
+					<p>Melhor horário para a ligação: </p>
+					<select>
+						<option></option>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>					
+				</div>
+
+
+				<label for="check-receber" class="checkbox"><input type="checkbox" name="receberEmail" id="check-receber" >Gostaria de receber e-mails?</label>
 				
 
 				<input type="submit" value="Enviar formulário">
