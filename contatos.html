@@ -9,7 +9,7 @@
 	<body>
 		<header>
 			<div class="caixa">
-				<h1><img  src="img/logo.png"></h1>
+				<h1><img  src="img/logo.png" alt="Logo da barbeari"></h1>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -23,19 +23,19 @@
 		<main>
 			<form method="get">
 				<label for="nomesobrenome">Seu nome: </label>
-				<input type="text" id="nomesobrenome" name="nomesobrenome" class="input-principal" required>
+				<input type="text" id="nomesobrenome" name="nomesobrenome" class="input-principal" placeholder="Fulano da Silva" required>
 
 				<label for="email">E-mail: </label>
-				<input type="email" id="email" name="email" class="input-principal" required>
+				<input type="email" id="email" name="email" class="input-principal" placeholder="email@dominio.com" required>
 
 				<label for="telefone">Telefone: </label>
-				<input type="tel" id="telefone" name="telefone" class="input-principal" required>
+				<input type="tel" id="telefone" name="telefone" class="input-principal" placeholder="(XX) XXXXX-XXXX" required>
 
 				<label for="mensagem">Mensagem</label>
 				<textarea cols="70" rows="10" id="mensagem" class="input-principal" required></textarea>
 				
-				<div><!--Todos possuem a tag name com o mesmo nome, pois é uma marcação única, caso quiser mais de uma marcação, apenas retirar a tag 'name' ou colocar nomes diferentes -->
-					<p>Forma para entrar em contato:</p>
+				<fieldset><!--Todos possuem a tag name com o mesmo nome, pois é uma marcação única, caso quiser mais de uma marcação, apenas retirar a tag 'name' ou colocar nomes diferentes -->
+					<legend>Forma para entrar em contato:</legend>
 					<label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
 					
 
@@ -44,20 +44,20 @@
 
 					<label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">Whatsapp</label>
 					
-				</div>
+				</fieldset>
 
-				<div class="selecao">
-					<p>Melhor horário para a ligação: </p>
+				<fieldset class="selecao">
+					<legend>Melhor horário para a ligação: </legend>
 					<select>
 						<option></option>
 						<option>Manhã</option>
 						<option>Tarde</option>
 						<option>Noite</option>
 					</select>					
-				</div>
+				</fieldset>
 
 
-				<label for="check-receber" class="checkbox"><input type="checkbox" name="receberEmail" id="check-receber" >Gostaria de receber e-mails?</label>
+				<label for="check-receber" class="checkbox"><input type="checkbox" name="receberEmail" id="check-receber" checked>Gostaria de receber e-mails?</label>
 				
 
 				<input type="submit" value="Enviar formulário">
@@ -67,7 +67,7 @@
 	</body>	
 
 	<footer>
-		<img src="img/logo-branco.png">
+		<img src="img/logo-branco.png" alt="Logo da barbeari">
 		<p class="copyright">Copyright&copy; Barbearia Alura - 2020</p>
 	</footer>
 </html>
