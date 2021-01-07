@@ -129,6 +129,7 @@ form label, form legend{
 	margin-bottom: 12px;
 	padding: 10px;
 	width: 50%;
+	border-radius: 4px;
 }
 
 .checkbox{
@@ -179,4 +180,8 @@ thead{
 td, th{
 	border: 1px solid black;
 	padding: 10px 25px;
+}
+
+.estado-table{
+	text-align: center;
 }
