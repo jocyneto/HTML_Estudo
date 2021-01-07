@@ -144,3 +144,28 @@ form label, form legend{
 	margin-top: 15px;
 }
 
+.box-enviar{
+	display: relative;
+	width: 940px;	
+}
+
+.enviar{
+	display: absolute;
+	width: 40%;
+	padding: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: orange;
+	border-style: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+	margin-left: 300px;
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+}
+

@@ -32,11 +32,11 @@
 				<input type="tel" id="telefone" name="telefone" class="input-principal" placeholder="(XX) XXXXX-XXXX" required>
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-principal" required></textarea>
+				<textarea cols="70" rows="10" id="mensagem" class="input-principal" placeholder="Digite aqui sua mensagem incrível! :)" required></textarea>
 				
 				<fieldset><!--Todos possuem a tag name com o mesmo nome, pois é uma marcação única, caso quiser mais de uma marcação, apenas retirar a tag 'name' ou colocar nomes diferentes -->
 					<legend>Forma para entrar em contato:</legend>
-					<label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
+					<label for="radio-email"><input type="radio" name="contato" id="radio-email">E-mail</label>
 					
 
 					<label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
@@ -59,9 +59,9 @@
 
 				<label for="check-receber" class="checkbox"><input type="checkbox" name="receberEmail" id="check-receber" checked>Gostaria de receber e-mails?</label>
 				
-
-				<input type="submit" value="Enviar formulário">
-			
+				<fieldset class="box-enviar">	
+					<input type="submit" value="Enviar formulário" class="enviar">
+				</fieldset>
 			</form>
 		</main>
 	</body>	
