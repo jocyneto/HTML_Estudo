@@ -4,36 +4,41 @@
 		<meta charset="utf-8">
 		<title>Barbearia alura</title>
 		<link rel="stylesheet" href="estilo/reset.css">
-		<link rel="stylesheet" href="estilo/style-home.css">
+		<link rel="stylesheet" href="estilo/style.css">
 
 	</head>
 	<body>
 		<header>
-			<div class="titulo-principal">
-				<h1><img src="img/logo.png"></h1>
+			<div class="caixa">
+				<h1><img  src="img/logo.png"></h1>
 				<nav>
-					<li><a href="index.html">home</a></li>
-					<li><a href="produtos.html">produtos</a></li>
-					<li><a href="contatos.html">contato</a></li>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contatos.html">Contato</a></li>
+					</ul>
 				</nav>
 			</div>
-			
 		</header>
 
-		<main>
-			<img id="banner" src="img/banner.jpg">
-			<div class="principal">
-				<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+
+			<img class="banner" src="img/banner.jpg">
+
+		<main>			
+			<section class="principal">
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+				<img class="utensilios" src="img/utensilios.jpg" alt="Utensilios">
 
 				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-				<p id="missao"><em><strong>Nossa missão é:</strong> "Proporcionar auto-estima e qualidade de vida aos clientes".</em></p>
+				<p><em><strong>Nossa missão é: </strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</em></p>
 
 				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-			</div>
+			</section>
 
-			<div class="beneficios">
-				<h3 class="titulo-centralizado">Beneficíos</h3>
+			<section class="beneficios">
+				<h3 class="titulo-principal">Beneficíos</h3>
 				<ul>
 					<li class="itens">Item 01</li>
 					<li class="itens">Item 02</li>
@@ -42,8 +47,12 @@
 					<li class="itens">Item 05</li>
 				</ul>
 				<img src="img/beneficios.jpg" class="beneficiosimg">
-			</div>
-		</main>
-		
+			</section>
+		</main>		
 	</body>
+
+	<footer>
+		<img src="img/logo-branco.png">
+		<p class="copyright">Copyright&copy; Barbearia Alura - 2020</p>
+	</footer>
 </html>
