@@ -2,6 +2,10 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+.index-body{
+	background: linear-gradient(#FEFEFE 45%, #888888)
+}
+
 header{
 	background: #DDDDDD;
 	padding: 20px 0;
@@ -224,6 +228,7 @@ td, th{
 
 .mapa{
 	margin: 3em 0;
+	box-shadow: 10px 10px 30px #000000;
 }
 
 .mapa p{
@@ -247,7 +252,7 @@ td, th{
 }
 
 .itens:before{
-	content: "✓";
+	content: "✓ ";
 }
 
 .itens:first-child{
@@ -256,9 +261,34 @@ td, th{
 
 .beneficios-img{
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 30px #000000;
+}
+
+.beneficios-img:hover{
+	opacity: 0.3;
+	transition: 400ms;
 }
 
 .video{
 	width: 560px;
 	margin: 3em auto;
+}
+
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-beneficio, .mapa, .video{
+		width: auto;
+	}
+	h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }
