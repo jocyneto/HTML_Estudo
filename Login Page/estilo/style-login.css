@@ -1,0 +1,64 @@
+body{
+    background: linear-gradient(45deg,#43D0FF, #E94AFF );
+    font-family: 'Varela Round', sans-serif;
+}
+.login{
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+.caixa-login{
+    width: 420px;
+    height: 520px;
+    margin: 235px;
+    background: #FEFEFE;
+    box-shadow: 10px 0 60px  #000000;
+    border-radius: 10px;
+}
+
+.titulo-login{
+    text-align: center;
+    font-weight: bold;
+    padding: 1em 0;
+    font-size: 30px;
+}
+
+.caixa-login label{
+    font-size: 14px;
+    padding: 2px;
+}
+
+.caixa-login input{
+    display: block;
+    padding: 10px 15px;
+    width: 90%;
+    border-style: none;    
+}
+
+
+.login-usuario-senha{
+    margin: 2em 15%;   
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.caixa-login fieldset{
+    width: 300px;
+    margin: 0 18%; 
+   
+}
+
+.enviar-form{
+    margin-top: 3em;
+    background: linear-gradient(90deg,#43D0FF, #E94AFF );
+    border-radius: 20px;
+    font-weight: bold;
+    color: #FEFEFE;  
+    transition: 400ms;
+}
+
+.enviar-form:hover{
+    transition: 400ms;
+    background: linear-gradient(20deg,#43D0FF, #E94AFF );
+    transform: scale(1.1);
+}
