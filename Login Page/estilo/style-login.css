@@ -42,10 +42,13 @@ body{
     border-bottom: 2px solid #CCCCCC;
 }
 
+.caixa-login input:focus{
+    outline-style: none;
+}
+
 .caixa-login fieldset{
     width: 300px;
-    margin: 0 18%; 
-   
+    margin: 0 18%;   
 }
 
 .enviar-form{
@@ -62,3 +65,6 @@ body{
     background: linear-gradient(20deg,#43D0FF, #E94AFF );
     transform: scale(1.1);
 }
+
+
+
