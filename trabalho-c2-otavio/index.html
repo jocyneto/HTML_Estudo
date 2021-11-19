@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo de advinhacao cor</title>
+	</head>
+	<body onload="comeca_jogo()">
+		<script type="text/javascript">
+			//1.
+			var lista_cores = ["blue", "gray", "yellow", "green","black", "cyan", "purple", "silver", "orange", "lime", "magenta", "olive", "maroon", "brown", "darkblue", "lightblue"];
+			lista_cores = lista_cores.sort();
+
+			//2.
+			function comeca_jogo() {
+
+				//2.1
+				var seleciona_index = Math.floor(Math.random() * (lista_cores.length - 0)) + 0;
+
+				//2.2
+				var teste = lista_cores[seleciona_index];
+				var mensagem = "Advinhe a cor que eu estou pensando dentre as opçoes:\n\n";
+				for (var i = 0 ; i < lista_cores.length ; i++) {
+					mensagem += lista_cores[i];
+					if (i == (lista_cores.length-2)){
+						mensagem += " e ";
+					} else if (i != (lista_cores.length-1)) {
+						mensagem += ", ";
+					}
+				}
+
+				var chute_input;
+				var ganhou = false;
+				var contador = 0;
+				alert(teste);
+
+				//2.3
+				while (!ganhou){
+					chute_input = prompt(mensagem).toLowerCase();
+					contador++;
+					ganhou = check_guess(chute_input,teste);
+					if (ganhou) {
+						var corpo_cor = document.getElementsByTagName("body")[0];
+						corpo_cor.style.background = teste;
+						alert("Parabens, voce acertou\n\nNúmero de tentativas foi de: " + contador + "\n\nAgora voce pode ver a cor acertada");
+					}
+					
+				}
+				var corpo_cor = document.getElementsByTagName("body")[0];
+				corpo_cor.style.background = teste;
+			}
+
+			//3.
+			function check_guess(guess, target) {
+				if (lista_cores.indexOf(guess)<0) {
+
+					//3.1
+					alert("Nao existe a cor\n\nTente novamento.");
+					return false;
+				} else if(guess > target) {
+
+					//3.2
+					alert("Errou!\n\nDica: Sua cor é em ordem alfabetica maior que a minha.\n\nTente novamente.");
+				} else if (guess < target) {
+
+					//3.3
+					alert("Errou!\n\nDica: Sua cor é em ordem alfabetica menor que a minha.\n\nTente novamente.");
+				} else {
+					return true;
+				}
+			}
+
+		</script>
+	</body>
+</html>
